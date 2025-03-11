@@ -214,6 +214,11 @@ body {
   font-weight: lighter;
   margin: 10px 0 0;
 }
+.wish h4 {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: 5px 0 0;
+}
 
 .nine p {
   font-size: 2rem;

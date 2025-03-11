@@ -90,9 +90,13 @@ const animationTimeline = () => {
         scale: 0.2,
         opacity: 0,
     })
-    .from(".fake-btn", 0.3, {
+    .from(".fake-btn", {
+        duration: 0.1,
         scale: 0.2,
         opacity: 0,
+        onComplete: function () {
+            document.querySelector(".fake-btn").click(); // Klik otomatis setelah animasi selesai
+        }
     })
     .staggerTo(
         ".hbd-chatbox span",
